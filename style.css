@@ -8,8 +8,23 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(70deg, #494874,#023b78 ,#69033b);
     padding: 10px;
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .todo-app {
